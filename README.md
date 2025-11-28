@@ -8,7 +8,7 @@ Here is the example of an original image:
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/photo.png" width="450">
 
-And this is how the art is made. The first 100 lines ...
+And this is how the art is made. The string starts on nail 0 (you can see the line starting on the right ride of the frame) and then it continues as one continuous thread. The first 100 lines is displayed below:
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_100_lines.png" width="450">
 
