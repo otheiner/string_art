@@ -39,7 +39,6 @@ And this is the snippet of the instuctions which nails to connect for the first 
 [164  94 161  90 160]
 [ 91 162  89  48  84] 
 
-
  ----- Lines 50 to 75 ----- 
 
 [160  92 162  86  53]
