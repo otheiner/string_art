@@ -3,3 +3,4 @@ img
 *.pkl
 .idea
 *.txt
+__pycache__
