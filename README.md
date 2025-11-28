@@ -12,10 +12,6 @@ And this is how the art is made. The string starts on nail 0 (you can see the li
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_100_lines.png" width="450">
 
-... 1000 lines ...
-
-<img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_1000_lines.png" width="450">
-
 ... 1500 lines ...
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_1500_lines.png" width="450">
