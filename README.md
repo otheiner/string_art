@@ -6,13 +6,23 @@ The class itself is in a string_art.py file and notebook tutorial.ipynb demonstr
 
 Here is the example of an original image:
 
+<img src="https://github.com/otheiner/thread_art/blob/main/assets/photo.png" width="450">
+
 And this is how the art is made. The first 100 lines ...
+
+<img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_100_lines.png" width="450">
 
 ... 1000 lines ...
 
+<img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_1000_lines.png" width="450">
+
 ... 1500 lines ...
 
+<img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_1500_lines.png" width="450">
+
 ... 3000 lines ...
+
+<img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_3000_lines.png" width="450">
 
 And this is the snippet of the instuctions which nails to connect for the first 100 lines. It starts at nail 0, then goes to nail 182, then 154, ...
 
