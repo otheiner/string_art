@@ -61,11 +61,11 @@ And this is the snippet of the instuctions which nails to connect for the first 
 [110  62 112  64 115]
 ```
 
-I can also generate image which has hole in them (this is me with open mouth):
+I can also generate image which has hole in them (this is me with open mouth). The way of doing it is decribed in the tutorial notebook.
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/open_mouth.png" width="450">
 
-And another image that I generated:
+And another image that I generated - this time not a face.
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/dog.png" width="450">
 
