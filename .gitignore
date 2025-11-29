@@ -5,3 +5,5 @@ img
 *.txt
 __pycache__
 !output_sequence_236_nails.txt
+
+
