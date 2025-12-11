@@ -1,10 +1,10 @@
 # StringArt package
 
-This is the repository of my little coding and crafting project. I created class that turns any picture into a string art on circular frame with defined number of nails. Not all images are suitable for this - the picture that usually works best are pictures that has high contrast, not so many sharp edges. Faces and animals tend to work well. Landscapes, buildings and similar things usually don't. 
+This is the repository of my little coding and crafting project. I created a code that turns any picture into a string art on circular frame with defined number of nails. Not all images are suitable for this - the picture that usually works best are pictures that has high contrast, not so many sharp edges. Faces and animals tend to work well. Landscapes, buildings and similar things usually don't. 
 
 The algorithm I am using is described at the bottom of this README.
 
-The class itself is in a string_art.py file and notebook tutorial.ipynb demonstrates the basic functionality. File development_notebook.ipynb is my notebook that I used for development and debugging.
+The python class that I created to achieve this is in a string_art.py file and notebook tutorial.ipynb demonstrates the basic functionality. File development_notebook.ipynb is my notebook that I used for development, testing and debugging.
 
 Here is the example of an image that I decided to turn into string art:
 
