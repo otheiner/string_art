@@ -72,7 +72,7 @@ If you were wondering how this is achieved (without checking my code), the algor
  1) Define number of nails on circular frame, enter the image and pick the number of lines you want to draw
  2) The image is "placed inside the circular frame" and converted to greyscale
  3) The thread starts at nail number 0
- 4) From all possible lines that can be drawn between nail 0 and arbitrary nail, the line that is "the darkest" is picked. This means that I sum values of all pixels that the line overlaps and I normalise it by the length of line in order for shorter lines have same importance as long lines. If you are generating image with hole in it, just check that the line doesn't cross forbidden area and if it does, pick another line with big overlap that doesn't cross forbidden area.
+ 4) From all possible lines that can be drawn between nail 0 and arbitrary nail, the line that is "the darkest" is picked. This means that I sum values of all pixels that the line overlaps and I normalise it by the number of pixels on this line in order for shorter lines have same importance as long lines. If you are generating image with hole in it, just check that the line doesn't cross forbidden area and if it does, pick another line with big overlap that doesn't cross forbidden area.
  6) Once the line is picked, I subtract a little value (this value has to be tuned experimentally) from all pixels on the original image that are overlayed by the picked line.
  7) Repeat steps 4)-6) from each of the visited nails until you draw number of lines that was specified by the user in step 1)
 
