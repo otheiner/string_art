@@ -18,7 +18,7 @@ And this is how the art is made. The string starts on nail 0 (you can see the li
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_1500_lines.png" width="450">
 
-... 3000 lines ...
+... 2000 lines ...
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_3000_lines.png" width="450">
 
