@@ -57,6 +57,9 @@ And this is the snippet of the instuctions which nails to connect for the first 
 [ 35  73  58 104  61]
 [110  62 112  64 115]
 ```
+Here is the physical art. I used 236 nails and about 900 meters of a thread.
+
+<img src="https://github.com/otheiner/string_art/blob/main/assets/physical_art.jpeg" width="450">
 
 I can also generate images which have hole in them (this is me with open mouth), so one can get a little bit creative. The way of doing it is decribed in the tutorial notebook.
 
