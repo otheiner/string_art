@@ -1,8 +1,10 @@
-# StringArt class
+# StringArt package
 
-This is the repository of my little coding and crafting project. I created class that turns any picture into a cring art on circular frame with defined number of nails. Not all images are suitable for this - the picture that usually works best are pictures that has high contrast, not so many sharp edges. Faces and animals tend to work well. Landscapes, buiodings and similar things usually don't. 
+This is the repository of my little coding and crafting project. I created a code that turns any picture into a string art on circular frame with defined number of nails. Not all images are suitable for this - pictures that usually work the best are pictures that have high contrast, not so many sharp edges. Faces and animals tend to work well. Landscapes, buildings and similar things usually don't. 
 
-The class itself is in a string_art.py file and notebook tutorial.ipynb demonstrates the basic functionality. File development_notebook.ipynb is my notebook that I used for development and debugging.
+The algorithm I am using is described at the bottom of this README.
+
+The python class that I created to achieve this is in a string_art.py file and notebook tutorial.ipynb demonstrates the basic functionality. File development_notebook.ipynb is my notebook that I used for development, testing and debugging.
 
 Here is the example of an image that I decided to turn into string art:
 
@@ -16,7 +18,7 @@ And this is how the art is made. The string starts on nail 0 (you can see the li
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_1500_lines.png" width="450">
 
-... 3000 lines ...
+... 2000 lines ...
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_3000_lines.png" width="450">
 
@@ -63,4 +65,16 @@ I can also generate images which have hole in them (this is me with open mouth),
 And another image that I generated - this time not a face.
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/dog.png" width="450">
+
+## The Algorithm
+If you were wondering how this is achieved (without checking my code), the algorithm is surprisingly simple. 
+
+ 1) Define number of nails on circular frame, enter the image and pick the number of lines you want to draw
+ 2) The image is "placed inside the circular frame" and converted to greyscale
+ 3) The thread starts at nail number 0
+ 4) From all possible lines that can be drawn between nail 0 and arbitrary nail, the line that is "the darkest" is picked. This means that I sum values of all pixels that the line overlaps and I normalise it by the number of pixels on this line in order for shorter lines have same importance as long lines. If you are generating image with hole in it, just check that the line doesn't cross forbidden area and if it does, pick another line with big overlap that doesn't cross forbidden area.
+ 6) Once the line is picked, I subtract a little value (this value has to be tuned experimentally) from all pixels in the original image that are overlayed by the picked line.
+ 7) Repeat steps 4)-6) from each of the visited nails until you draw number of lines that was specified by the user in step 1)
+
+My algorithm works with the bitmaps of the input image and masks of lines drawn between any pair of the nails. Computing these masks takes most of the time (several minutes (MacBook Pro from 2019) for a frame with ~230 nails). Time complexity of this part of the algorithm is O(n(n-1)/2), where n is the number of nails on the frame and n(n-1)/2 is number of connecitions between any pair of nails, but it has to be done only once for the frame of given number of nails. This is a reasonable trade off because once you know how many nails your frame has, you can experiment with different pictures and you won't be changing number of nails. Once these masks are saved to a cache file and algorithm is able to compute sequence of nails for any image within a few seconds. The time complexity with precomputed masks (which can be reused once they have been computed) is ~O(n) where n is the number of lines that we want to draw. Algorithm could be probably more optimised if I used vector graphics and maybe completely different approach, but since this is the solution that seems to work really well and we probably don't need to generate the image in real time for arbitrary number of nails, I decided to keep it as it is.
 
