@@ -142,6 +142,11 @@ class StringArt:
     def get_image(self):
         return self._image_array
 
+    def clear_plot(self):
+        if self._ax is not None:
+            #plt.close(self._ax.figure)
+            self._ax = None
+
     # helper function to make sure we can plot in the same canvas
     def _ensure_ax(self):
         """Internal method to create a shared Axes if it doesn't exist."""
