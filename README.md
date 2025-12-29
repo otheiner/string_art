@@ -10,17 +10,9 @@ Here is the example of an image that I decided to turn into string art:
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/photo.png" width="450">
 
-And this is how the art is made. The string starts on nail 0 (you can see the line starting on the right side of the frame) and then it continues as one continuous thread. The first 100 lines is displayed below:
+And this is how the art is made. The string starts on nail 0 (you can see the line starting on the right side of the frame) and then it continues as one continuous thread. You can see the process of creation below (using 2000 lines and 236 nails):
 
-<img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_100_lines.png" width="450">
-
-... 1500 lines ...
-
-<img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_1500_lines.png" width="450">
-
-... 2000 lines ...
-
-<img src="https://github.com/otheiner/thread_art/blob/main/assets/string_art_236_nails_3000_lines.png" width="450">
+<img src="https://github.com/otheiner/thread_art/blob/main/assets/animation.gif" width="450">
 
 And this is the snippet of the instuctions which nails to connect for the first 100 lines. It starts at nail 0, then goes to nail 182, then 154, ... The whole sequence is in ```/assets/output_sequence_236_nails.txt```.
 
