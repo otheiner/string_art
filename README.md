@@ -10,7 +10,7 @@ Here is the example of an image that I decided to turn into string art:
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/photo.png" width="450">
 
-And this is how the art is made. The string starts on nail 0 (you can see the line starting on the right side of the frame) and then it continues as one continuous thread. You can see the process of creation below (using 2000 lines and 236 nails):
+And this is how the art is made. The string starts on nail 0 (you can see the line starting on the right side of the frame) and then it continues as one continuous thread. You can see the process of creation below (if the animation is not running, refresh this page):
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/animation.gif" width="450">
 
